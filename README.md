@@ -4,6 +4,7 @@ A git contain dataset used for the preprint "A Comparative Analysis of Social Ne
 ## Usage
 ### Directed graph with edges unweighted.
 ```
+import pickle
 import networkx as nx
 
 with open('./edges_weight_moltbook.pkl', 'rb') as f:
@@ -14,6 +15,7 @@ DiG.add_edges_from([(item[0], item[1]) for item in edges_weight])
 ```
 ### Directed graph with edges weighted by the number of comments from commenter to receiver.
 ```
+import pickle
 import networkx as nx
 
 with open('./edges_weight_moltbook.pkl', 'rb') as f:
